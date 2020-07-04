@@ -1,0 +1,21 @@
+:root {
+  --green: rgb(42, 161, 61);
+  --yellow: rgb(231, 188, 1);
+  --red: rgb(191, 19, 17);
+}
+
+body {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.priority-1 {
+  background-color: var(--red) !important;
+}
+
+.priority-2 {
+  background-color: var(--yellow) !important;
+}
+
+.priority-3 {
+  background-color: var(--green) !important;
+}
