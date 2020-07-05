@@ -115,17 +115,6 @@ export default {
   width: 1px;
 }
 
-button {
-  background-color: transparent;
-  border: none;
-  color: inherit;
-  /* show a hand cursor on hover; some argue that we
-  should keep the default arrow cursor for buttons */
-  cursor: pointer;
-  font: inherit;
-  padding: 0;
-}
-
 select {
   color: gray;
 }

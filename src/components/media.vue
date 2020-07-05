@@ -101,15 +101,4 @@ export default {
   margin-bottom: 0;
   padding-right: 1rem;
 }
-
-button {
-  background-color: transparent;
-  border: none;
-  color: inherit;
-  /* show a hand cursor on hover; some argue that we
-  should keep the default arrow cursor for buttons */
-  cursor: pointer;
-  font: inherit;
-  padding: 0;
-}
 </style>
