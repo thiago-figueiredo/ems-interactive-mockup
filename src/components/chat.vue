@@ -1,5 +1,5 @@
 <template>
-  <div>Chat?</div>
+  <p style="text-align: center;">Chat? What chat? 🤔</p>
 </template>
 
 <script>
