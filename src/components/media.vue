@@ -79,12 +79,24 @@ export default {
 <style scoped>
 .media-item {
   align-items: center;
+  background-color: var(--nc-bg-1);
   border: 1px solid var(--nc-tx-2);
   display: flex;
   font-size: 1.2rem;
   margin-bottom: 0.2rem;
   padding: 1rem;
+  transition: background-color 0.2s;
   width: calc(100% - 1px);
+}
+
+.media-item:hover {
+  background-color: var(--nc-bg-2);
+  outline: none;
+}
+
+.media-item:focus {
+  background-color: var(--nc-bg-3);
+  outline: none;
 }
 
 .media-item-counter {

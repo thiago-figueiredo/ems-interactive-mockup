@@ -87,11 +87,22 @@ export default {
 
 .gender-option {
   display: grid;
+  transition: background-color 0.2s;
+}
+
+.gender-option:hover {
+  background-color: var(--nc-bg-2);
+  outline: none;
+}
+
+.gender-option:focus {
+  background-color: var(--nc-bg-3);
+  outline: none;
 }
 
 .gender-selected {
-  background-color: var(--nc-tx-2);
-  color: var(--nc-bg-1);
+  background-color: var(--nc-tx-2) !important;
+  color: var(--nc-bg-1) !important;
 }
 
 .gender-text {

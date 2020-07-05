@@ -165,6 +165,15 @@ export default {
   padding: 0rem 0.5rem;
 }
 
+.complaint-item:focus {
+  outline: none;
+}
+
+.complaint-item:focus > .complaint-item-text {
+  outline: 1px dotted var(--nc-tx-2);
+  outline-offset: 0.2rem;
+}
+
 .complaint-item-text {
   margin: auto;
   text-align: center;

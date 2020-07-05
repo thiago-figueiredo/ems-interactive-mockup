@@ -7,7 +7,7 @@
         :class="{ 'active-tab': activeTab === 'complaints' }"
         @click="setActiveTab('complaints')"
       >
-        Complaints
+        <span class="tab-text">Complaints</span>
       </a>
       <a
         class="tab"
@@ -15,7 +15,7 @@
         :class="{ 'active-tab': activeTab === 'media' }"
         @click="setActiveTab('media')"
       >
-        Media
+        <span class="tab-text">Media</span>
       </a>
       <a
         class="tab"
@@ -23,7 +23,7 @@
         :class="{ 'active-tab': activeTab === 'chat' }"
         @click="setActiveTab('chat')"
       >
-        Chat
+        <span class="tab-text">Chat</span>
       </a>
     </div>
     <div class="tabs-content" tabindex="0">
@@ -84,6 +84,17 @@ export default {
   padding: 0.5rem;
   text-align: center;
   text-transform: uppercase;
+  transition: background-color 0.2s;
+}
+
+
+.tab:focus {
+  outline: none;
+}
+
+.tab:focus > .tab-text {
+  outline: 1px dotted var(--nc-tx-2);
+  outline-offset: 0.2rem;
 }
 
 .tabs {
@@ -113,6 +124,10 @@ export default {
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
   width: 100%;
+}
+
+.tabs-content:focus {
+  outline: none;
 }
 
 .tabs-divider {
