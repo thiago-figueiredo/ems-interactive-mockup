@@ -34,7 +34,7 @@
       v-on:keydown.enter="unsetComplaint()"
       :class="{ 'complaint-header-on': complaintSelected.name }"
     >
-      <div>
+      <div class="complaint-header-text">
         <div class="complaint-header-name">{{ complaintSelected.name }}</div>
         <div class="complaint-header-priority">
           Priority {{ complaintSelected.priority }}
@@ -158,6 +158,7 @@ export default {
 <style scoped>
 .complaint-item {
   border-radius: 4px;
+  cursor: pointer;
   display: grid;
   font-size: 1.1rem;
   font-weight: bold;
@@ -212,6 +213,7 @@ export default {
   background-color: var(--nc-bg-3);
   border-bottom: 1px solid var(--nc-bg-1);
   box-sizing: border-box;
+  cursor: pointer;
   display: flex;
   height: 69px;
   padding: 1rem;
@@ -223,6 +225,15 @@ export default {
 
 .complaint-header-on {
   top: 0px;
+}
+
+.complaint-header:focus {
+  outline: none;
+}
+
+.complaint-header:focus > .complaint-header-text {
+  outline: 1px dotted var(--nc-tx-2);
+  outline-offset: 0.2rem;
 }
 
 .complaint-header-name {
