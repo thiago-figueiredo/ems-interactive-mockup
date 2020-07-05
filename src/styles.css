@@ -33,6 +33,6 @@ button:focus {
   padding: 0;
 }
 
-div[tabindex="0"] {
-  cursor: pointer;
+* {
+  -webkit-tap-highlight-color: transparent;
 }
