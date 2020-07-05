@@ -87,7 +87,6 @@ export default {
   transition: background-color 0.2s;
 }
 
-
 .tab:focus {
   outline: none;
 }
