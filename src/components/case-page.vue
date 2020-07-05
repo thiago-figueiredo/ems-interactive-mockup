@@ -59,10 +59,9 @@ export default {
   grid-template-areas:
     "back header forward"
     "age-and-gender-and-hospital age-and-gender-and-hospital age-and-gender-and-hospital"
-    "tabs tabs tabs"
-    "main main main";
+    "tabs tabs tabs";
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto auto;
+  grid-template-rows: auto auto 451px;
 }
 
 .forward {
