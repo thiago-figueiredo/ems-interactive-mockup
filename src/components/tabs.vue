@@ -123,19 +123,4 @@ export default {
 .tabs-content > .snap-point {
   scroll-snap-align: start;
 }
-
-.tabs-content::-webkit-scrollbar-track {
-  background-color: #000000;
-}
-
-.tabs-content::-webkit-scrollbar {
-  background-color: #000000;
-  border-radius: 4px;
-  height: 8px;
-}
-
-.tabs-content::-webkit-scrollbar-thumb {
-  background-color: var(--nc-tx-2);
-  border: 2px solid #000000;
-}
 </style>
